@@ -1,0 +1,23 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+plugins:          [jekyll-paginate]
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: false
+
+# Setup
+title:            GANsNotGains
+splitTitle:       'GANs&#10;Not&#10;Gains'
+tagline:          'CS4476 Project Page'
+description:      'Generating artwork with GANs'
+url:              https://GANsNotGains.github.io
+baseurl:          /
+
+author:
+  name:           'Matthew Kaufer'
+  url:            https://github.com/mjkaufer
+
+github:
+  repo:           https://github.com/GANsNotGains

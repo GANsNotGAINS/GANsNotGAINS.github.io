@@ -2,6 +2,7 @@
 layout: post
 title: Project Proposal
 ---
+By Ehsan Asdar (easdar3), Ashwini Iyer (aiyer65), Matthew Kaufer (mkaufer3), Nidhi Palwayi (spalwayi3), and Kexin Zhang (kzhang323)
 
 # Problem Statement
 Generative music is a very interesting field – who doesn't want to hear a new Mozart composition? We propose two methods of generating music through image generation, Markov Models and GANs, and will compare their results.

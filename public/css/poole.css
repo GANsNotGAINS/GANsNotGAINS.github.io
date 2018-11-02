@@ -428,3 +428,14 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+/* CUSTOM CSS STARTS HERE */
+.post img {
+  width: 100%;
+  image-rendering: pixelated;
+}
+
+.post .caption {
+  text-align: center;
+  font-style: italic;
+}

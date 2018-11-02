@@ -4,22 +4,22 @@ title: Midterm Project Update
 ---
 By Ehsan Asdar (easdar3), Ashwini Iyer (aiyer65), Matthew Kaufer (mkaufer3), Nidhi Palwayi (spalwayi3), and Kexin Zhang (kzhang323)
 
-#Abstract
+# Abstract
 Our project focuses on music generation through image processing techniques. We developed a method for encoding songs in images and trained variable order Markov models on these image representations. Our experiments produced the best results when the model was trained on a few songs with a distinct style.
 
 <img src="/static/images/img1_output.png"/>
 <p class="caption">Sample of song embedded in image</p>
 
-#Introduction
+# Introduction
 Novel music generation is a large area of active research. For this project, we wanted to experiment with generative computer vision approaches we have been learning in this course (along with more advanced deep learning based CV algorithms) to see if they can also serve as effective methods of generating music. To apply these CV approaches, we created an experimentation pipeline that converts input MusicXML music formats into images, generates songs based off of these inputs, encoded as images, and then converts these output images back into audio for playback. The generated music is evaluated by its ability to sustain musical patterns throughout the song.
 
-##Applications
+## Applications
 Generative music has several creative applications. Producers and musicians can employ generative techniques to synthesize new music samples and develop new songs based on similar work. For example, given a trained model, one can generate different segments of music given previous note histories. 
 
-##Existing Approaches
+## Existing Approaches
 Some existing works that we researched include Wavenet, projects from Google’s Magenta, and Cycle GAN audio. While our idea is not unique, our project is still meaningful, since we plan to explore image representations of songs and experiment with a variety of techniques for music generation.
 
-#Approach:
+# Approach:
 
 To generate music, we developed the following procedures:
 
@@ -47,7 +47,7 @@ With our image representations of songs, we can treat sequences of notes in the 
 
 We used the Python `vomm` library for training variable order Markov models and generating new song images based on the inputs. The inputs are columns of the song images, and the model predicts next values, which are also columns of an image. These predicted values form the image representation of the output song. This output image can then be decoded to construct a Midi file. 
 
-#Experiments and Results
+# Experiments and Results
 
 We tested our image generation model on several training sets. On smaller training sets of songs with distinct, repetitive phrases, the variable order Markov model performed well. This is because the generated piece tended to audibly mimic motifs from the few input pieces. For example, we trained the model with a variable order of five on a small set of Star Wars soundtrack songs &mdash; in this case, the Markov model generated music that incorporated common melodic lines from the inputs. With a small set of songs from Undertale, the model produced similar results.
 
@@ -61,10 +61,10 @@ However, when we used larger training datasets, the results were poor. For examp
 
 This makes sense, since a smaller set of distinct songs has more patterns and a more recognizable motif that the Markov chain is able to represent well. With larger training sets, there are less small common patterns that the listener can distinguish between, and since the Markov model can only go so far back in time, the model is unable to capture the overall essence of *all* the pieces.
 
-#Conclusion and Future Work
+# Conclusion and Future Work
 Our next steps include experimenting with other approaches, such as GANs or recurrent neural networks, and comparing the results to the Markov model results. In addition, we plan to add improvements to our current approach. Notably, our method for encoding music into images can only represent pieces monophonically, which means that harmony notes and underlying chords are discarded. We plan to develop and implement an alternative encoding scheme that supports polyphonic pieces, which may yield more interesting results.
 
 Overall, our work so far has shown that we can effectively represent songs as images, and that Markov models can produce fairly good results on small, distinctive sets of songs.
 
-#References
+# References
 carykh. “3 Neural Nets Battle to Produce the Best Jazz Music.” YouTube, YouTube, 7 June 2017, www.youtube.com/watch?v=uiJAy1jDIQ0&t=8s.

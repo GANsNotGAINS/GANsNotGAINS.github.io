@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project Update
+title: Midterm Project Update
 ---
 By Ehsan Asdar (easdar3), Ashwini Iyer (aiyer65), Matthew Kaufer (mkaufer3), Nidhi Palwayi (spalwayi3), and Kexin Zhang (kzhang323)
 

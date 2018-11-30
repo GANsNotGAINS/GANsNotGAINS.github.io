@@ -25,7 +25,7 @@ We used Deep Convolutional Generative Adversarial Network, or DCGANs, to create 
 
 We hoped that by training a DCGAN on large datasets of input images, the generator would be able to approximate the true data distribution to produce new images that are similar to our inputs. Then, we can discretize and decode the result images to get a generated song. 
 
-#Experiment and Results
+# Experiment and Results
 We trained several DCGANs and experimented with varying the image encoding scheme and network sizes in the generator and discriminator. 
 
 Our data consisted of 800 classical songs downloaded from MuseScore, which is a site where users may upload transcriptions of music. These songs were converted with both the monophonic and polyphonic encoding schemes. Then, the image representations were tiled to 24 x 24 images, as most open source implementations of GANs are built to support square images. 
